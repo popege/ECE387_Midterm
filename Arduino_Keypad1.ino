@@ -87,7 +87,7 @@ void loop() {
       disp.clear();
       disp.setCursor(0,0);
       disp.print("Wrong!LOCKED");
-      delay(4000);
+      delay(30000);
       disp.clear();
       i = 0;
     }
