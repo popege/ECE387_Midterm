@@ -22,8 +22,7 @@
 
 #include "Key.h"
 
-// bperrybap - Thanks for a well reasoned argument and the following macro(s).
-// See http://arduino.cc/forum/index.php/topic,142041.msg1069480.html#msg1069480
+
 #ifndef INPUT_PULLUP
 #warning "Using  pinMode() INPUT_PULLUP AVR emulation"
 #define INPUT_PULLUP 0x2
@@ -46,8 +45,7 @@ typedef char KeypadEvent;
 typedef unsigned int uint;
 typedef unsigned long ulong;
 
-// Made changes according to this post http://arduino.cc/forum/index.php?topic=58337.0
-// by Nick Gammon. Thanks for the input Nick. It actually saved 78 bytes for me. :)
+
 typedef struct {
     byte rows;
     byte columns;
