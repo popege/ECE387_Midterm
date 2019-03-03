@@ -67,7 +67,8 @@ void loop() {
   if(position == 4) {
     
     if ((strncmp(password, keypadPW, 4) == 0)) {
-      
+      //the statements below this if statement are called when the uer input matches the password, so anything else you would like
+      //to implement, such as a motor, can be used here. 
     setLocked (false);
     disp.clear();
     disp.setCursor(0,0);
