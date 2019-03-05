@@ -30,6 +30,7 @@ LiquidCrystal disp (7, 8, 9, 10, 11, 12); //corresponding pins on LCD
 
 
 int i = 0;
+int f = 5000;
 
 
 
@@ -88,7 +89,8 @@ void loop() {
       disp.clear();
       disp.setCursor(0,0);
       disp.print("Wrong!LOCKED");
-      delay(30000);
+      f = f + 5000;
+      delay(f);
       disp.clear();
       i = 0;
     }
